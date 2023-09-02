@@ -62,28 +62,17 @@
 <!--    </AppAlert>-->
 <!--  </div>-->
 
-  <main class="min-h-screen max-w-3xl mx-auto bg-white py-32">
-    <div class="w-full grid justify-center text-center">
-
+  <main class="min-h-screen max-w-7xl mx-auto grid md:grid-cols-5 bg-white py-10 gap-10">
+    <div class="px-5 w-full flex flex-col md:col-span-2">
       <p class="text-base font-semibold text-primary-600">Lorem ipsum</p>
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Sort Algorithm</h1>
       <p class="text-base leading-7 text-gray-600">Lorem ipsum dolor sit amet.</p>
-
-      <iframe class="rounded-3xl mt-2"
-              src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy">
-      </iframe>
 
       <TextAreaInput
           id="number"
           v-model="input"
           type="text"
-          class="mt-5 block resize w-full"
+          class="mt-5 block resize-y w-full"
           rows="8"
           placeholder="masukkan number semaumu, dipisah dengan spasi ya kk"
           required
@@ -92,7 +81,7 @@
       />
       <p class="text-base leading-7 text-gray-600">Item count {{ input ? input.toString().split(" ").length : "0" }}</p>
 
-      <div class="mt-5 flex items-center justify-center gap-x-6">
+      <div class="mt-2 flex items-center gap-x-6">
         <button :disabled="viewResult || input === '' " @click="runForrestRun" class="inline-flex items-center rounded-3xl bg-primary-600 hover:bg-primary-500 disabled:bg-primary-300 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">
           <Icon icon="fluent:play-20-regular" class="mr-1" />
           Run
@@ -100,9 +89,19 @@
         <button v-if="!viewResult" @click="random" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Random Number <span aria-hidden="true">&rarr;</span></button>
         <button v-else @click="reset" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Reset <span aria-hidden="true">&rarr;</span></button>
       </div>
+
+      <iframe class="rounded-3xl mt-10"
+              src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+      </iframe>
     </div>
 
-    <div class="mt-10 w-full grid lg:grid-cols-2 justify-center text-center gap-x-5 gap-y-10">
+    <div class="px-5 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
       <template v-if="viewResult">
         <SortSelection :arr="arr" />
         <SortBubble :arr="arr" />
