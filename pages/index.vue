@@ -4,10 +4,20 @@
     const input = ref("")
     const viewResult = ref(false)
 
+    const selection = ref(false)
+    const bubble = ref(false)
+    const insertion = ref(false)
+    const quick = ref(false)
+
+    const sleep = (ms) => {
+      return new Promise(resolve => setTimeout(resolve, ms))
+    }
+
     var arr = [];
 
     const runForrestRun = () => {
       arr = input.value.split(" ").map(Number);
+
       viewResult.value=true
     };
 
@@ -26,6 +36,21 @@
       input.value = ""
       viewResult.value = false
     }
+
+    const sorts = [
+      {
+        name: 'Selection Sort:',
+      },
+      {
+        name: 'Bubble Sort:',
+      },
+      {
+        name: 'Quick Sort:',
+      },
+      {
+        name: 'Insertion Sort:'
+      }
+    ]
 
 </script>
 
@@ -67,11 +92,17 @@
       </div>
     </div>
 
-    <div class="mt-10 w-full grid lg:grid-cols-2 justify-center text-center gap-x-5 gap-y-10" v-if="viewResult">
-      <SortSelection :arr="arr" />
-      <SortBubble :arr="arr" />
-      <SortQuick :arr="arr" />
-      <SortInsertion :arr="arr" />
+    <div class="mt-10 w-full grid lg:grid-cols-2 justify-center text-center gap-x-5 gap-y-10">
+      <template v-if="viewResult">
+        <SortSelection :arr="arr" />
+        <SortBubble :arr="arr" />
+        <SortQuick :arr="arr" />
+        <SortInsertion :arr="arr" />
+      </template>
+
+      <template v-for="sort in sorts" v-else>
+        <SortSkeleton :sort="sort" />
+      </template>
     </div>
   </main>
 
