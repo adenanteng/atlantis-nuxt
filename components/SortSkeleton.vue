@@ -11,7 +11,7 @@ const props = defineProps({
           type="text"
           class="mt-1 block w-full"
           rows="8"
-          placeholder="Koshongggg...."
+          placeholder="Run forest runnnn....."
           disabled
       />
   </div>
