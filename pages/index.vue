@@ -55,7 +55,7 @@
           autofocus
           @focusin="viewResult = false"
       />
-      <p class="text-base leading-7 text-gray-600">item count {{ input ? input.toString().split(" ").length : "0" }}</p>
+      <p class="text-base leading-7 text-gray-600">Item count {{ input ? input.toString().split(" ").length : "0" }}</p>
 
       <div class="mt-5 flex items-center justify-center gap-x-6">
         <button :disabled="viewResult || input === '' " @click="runForrestRun" class="inline-flex items-center rounded-3xl bg-primary-600 hover:bg-primary-500 disabled:bg-primary-300 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">
