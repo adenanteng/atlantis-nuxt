@@ -17,7 +17,7 @@
 
     const random = () => {
       var idx
-      for (idx = 1; idx < 30; idx++) {
+      for (idx = 1; idx < 50; idx++) {
         input.value += getRandomInt() + " "
       }
     }
@@ -49,7 +49,7 @@
           v-model="input"
           type="text"
           class="mt-5 block resize w-full"
-          rows="5"
+          rows="8"
           placeholder="masukkan number semaumu, dipisah dengan spasi ya kk"
           required
           autofocus

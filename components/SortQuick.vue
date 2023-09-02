@@ -62,7 +62,7 @@ onMounted(() => {
           v-model="result"
           type="text"
           class="mt-1 block w-full resize-y"
-          rows="5"
+          rows="8"
           disabled
       />
 
