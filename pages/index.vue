@@ -69,6 +69,16 @@
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Sort Algorithm</h1>
       <p class="text-base leading-7 text-gray-600">Lorem ipsum dolor sit amet.</p>
 
+      <iframe class="rounded-3xl mt-2"
+              src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+      </iframe>
+
       <TextAreaInput
           id="number"
           v-model="input"
