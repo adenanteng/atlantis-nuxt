@@ -77,50 +77,58 @@
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Sort Algorithm</h1>
       <p class="text-base leading-7 text-gray-600">Lorem ipsum dolor sit amet.</p>
 
-      <TextAreaInput
-          id="number"
-          v-model="input"
-          type="text"
-          class="mt-5 block resize-y w-full"
-          rows="8"
-          placeholder="masukkan number semaumu, dipisah dengan spasi ya kk"
-          required
-          autofocus
+      <div class="mt-5">
+        <h3 class="ml-5 mb-2">Input:</h3>
+        <TextAreaInput
+            id="number"
+            v-model="input"
+            type="text"
+            class="mt-1 block resize-y w-full"
+            rows="8"
+            placeholder="masukkan number semaumu, dipisah dengan spasi ya kk"
+            required
+            autofocus
 
-      />
-      <p class="text-base leading-7 text-gray-600">Item count {{ input ? input.toString().split(" ").length : "0" }}</p>
+        />
+        <p class="ml-5 mt-1 text-base leading-7 text-gray-600">Item count {{ input ? input.toString().split(" ").length : "0" }}</p>
+        <div class="mt-2 flex items-center gap-x-6">
+          <button :disabled="input === '' " @click="runForrestRun" class="inline-flex items-center rounded-3xl bg-primary-600 hover:bg-primary-500 disabled:bg-primary-300 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">
+            <Icon icon="fluent:play-20-regular" class="mr-1" />
+            Run
+          </button>
+          <button @click="random" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Random Number</button>
+          <button v-if="input !== '' " @click="reset" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Reset</button>
+        </div>
 
-      <div class="mt-2 flex items-center gap-x-6">
-        <button :disabled="input === '' " @click="runForrestRun" class="inline-flex items-center rounded-3xl bg-primary-600 hover:bg-primary-500 disabled:bg-primary-300 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">
-          <Icon icon="fluent:play-20-regular" class="mr-1" />
-          Run
-        </button>
-        <button @click="random" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Random Number</button>
-        <button v-if="input !== '' " @click="reset" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Reset</button>
+        <iframe class="rounded-3xl mt-10"
+                src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+        </iframe>
       </div>
-
-      <iframe class="rounded-3xl mt-10"
-              src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy">
-      </iframe>
     </div>
 
-    <div class="px-5 md:mt-28 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
-      <template v-if="viewResult">
-        <SortSelection :arr="arr" />
-        <SortBubble :arr="arr" />
-        <SortQuick :arr="arr" />
-        <SortInsertion :arr="arr" />
-      </template>
+    <div class="px-5 w-full md:col-span-3 ">
+      <p class="text-base font-semibold text-primary-600 hidden md:block">&nbsp;</p>
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl hidden md:block">&nbsp;</h1>
+      <p class="text-base leading-7 text-gray-600 hidden md:block">&nbsp;</p>
 
-      <template v-for="sort in sorts" v-else>
-        <SortSkeleton :sort="sort" :loading="loading" />
-      </template>
+      <div class="grid sm:grid-cols-2 gap-5 mt-5">
+        <template v-if="viewResult">
+          <SortSelection :arr="arr" />
+          <SortBubble :arr="arr" />
+          <SortQuick :arr="arr" />
+          <SortInsertion :arr="arr" />
+        </template>
+
+        <template v-for="sort in sorts" v-else>
+          <SortSkeleton :sort="sort" :loading="loading" />
+        </template>
+      </div>
     </div>
   </main>
 

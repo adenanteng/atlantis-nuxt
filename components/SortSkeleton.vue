@@ -17,6 +17,7 @@ const props = defineProps({
         placeholder="Run forest runnnn....."
         disabled
     />
+    <p class="ml-5 mt-1 text-base leading-7 text-gray-600">Time in ms</p>
     <div v-if="loading" class="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
       <Icon icon="eos-icons:loading" class="h-20 w-20 text-primary-600 " />
     </div>
