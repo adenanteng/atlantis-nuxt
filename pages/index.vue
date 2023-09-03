@@ -71,7 +71,7 @@
 <!--    </AppAlert>-->
 <!--  </div>-->
 
-  <main class="min-h-screen max-w-7xl mx-auto grid md:grid-cols-5 bg-white py-10 gap-10">
+  <main class="max-w-7xl mx-auto grid md:grid-cols-5 bg-white py-10 gap-10">
     <div class="px-5 w-full flex flex-col md:col-span-2">
       <p class="text-base font-semibold text-primary-600">Lorem ipsum</p>
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Sort Algorithm</h1>
@@ -110,7 +110,7 @@
       </iframe>
     </div>
 
-    <div class="px-5 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
+    <div class="px-5 mt-20 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
       <template v-if="viewResult">
         <SortSelection :arr="arr" />
         <SortBubble :arr="arr" />
