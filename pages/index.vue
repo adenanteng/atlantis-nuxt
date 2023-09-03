@@ -6,8 +6,10 @@
 
     const selection = ref(false)
     const bubble = ref(false)
-    const insertion = ref(false)
     const quick = ref(false)
+    const insertion = ref(false)
+
+    const loading = ref(false)
 
     const sleep = (ms) => {
       return new Promise(resolve => setTimeout(resolve, ms))
@@ -16,9 +18,16 @@
     var arr = [];
 
     const runForrestRun = () => {
+      viewResult.value=false
+      loading.value=true
+
       arr = input.value.split(" ").map(Number);
 
-      viewResult.value=true
+      sleep(2000).then(() => {
+        viewResult.value=true
+        loading.value=false
+      })
+
     };
 
     function getRandomInt() {
@@ -77,28 +86,28 @@
           placeholder="masukkan number semaumu, dipisah dengan spasi ya kk"
           required
           autofocus
-          @focusin="viewResult = false"
+
       />
       <p class="text-base leading-7 text-gray-600">Item count {{ input ? input.toString().split(" ").length : "0" }}</p>
 
       <div class="mt-2 flex items-center gap-x-6">
-        <button :disabled="viewResult || input === '' " @click="runForrestRun" class="inline-flex items-center rounded-3xl bg-primary-600 hover:bg-primary-500 disabled:bg-primary-300 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">
+        <button :disabled="input === '' " @click="runForrestRun" class="inline-flex items-center rounded-3xl bg-primary-600 hover:bg-primary-500 disabled:bg-primary-300 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">
           <Icon icon="fluent:play-20-regular" class="mr-1" />
           Run
         </button>
-        <button v-if="!viewResult" @click="random" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Random Number <span aria-hidden="true">&rarr;</span></button>
-        <button v-else @click="reset" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Reset <span aria-hidden="true">&rarr;</span></button>
+        <button @click="random" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Random Number</button>
+        <button v-if="input !== '' " @click="reset" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Reset</button>
       </div>
 
-      <iframe class="rounded-3xl mt-10"
-              src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy">
-      </iframe>
+<!--      <iframe class="rounded-3xl mt-10"-->
+<!--              src="https://open.spotify.com/embed/track/3u6PxWema1snbjLbFEyjkJ?utm_source=generator"-->
+<!--              width="100%"-->
+<!--              height="152"-->
+<!--              frameBorder="0"-->
+<!--              allowfullscreen=""-->
+<!--              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"-->
+<!--              loading="lazy">-->
+<!--      </iframe>-->
     </div>
 
     <div class="px-5 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
@@ -110,7 +119,7 @@
       </template>
 
       <template v-for="sort in sorts" v-else>
-        <SortSkeleton :sort="sort" />
+        <SortSkeleton :sort="sort" :loading="loading" />
       </template>
     </div>
   </main>
