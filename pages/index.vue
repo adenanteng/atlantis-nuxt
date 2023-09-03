@@ -30,14 +30,10 @@
 
     };
 
-    function getRandomInt() {
-      return Math.floor(Math.random() * 9999);
-    }
-
     const random = () => {
       var idx
       for (idx = 1; idx < 50; idx++) {
-        input.value += getRandomInt() + " "
+        input.value += Math.floor(Math.random() * 9999) + " "
       }
     }
 
