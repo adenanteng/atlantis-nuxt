@@ -31,7 +31,11 @@ module.exports = {
       amber: colors.amber,
       red: colors.red
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 }
