@@ -110,7 +110,7 @@
       </iframe>
     </div>
 
-    <div class="px-5 mt-20 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
+    <div class="px-5 md:mt-28 w-full gap-5 md:col-span-3 grid sm:grid-cols-2">
       <template v-if="viewResult">
         <SortSelection :arr="arr" />
         <SortBubble :arr="arr" />
