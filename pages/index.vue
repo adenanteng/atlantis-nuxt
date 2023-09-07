@@ -53,9 +53,9 @@
       {
         name: 'Bubble Sort:',
       },
-      {
-        name: 'Quick Sort:',
-      },
+      // {
+      //   name: 'Quick Sort:',
+      // },
       {
         name: 'Insertion Sort:'
       }
@@ -71,13 +71,16 @@
 <!--    </AppAlert>-->
 <!--  </div>-->
 
-  <main class="max-w-7xl mx-auto grid md:grid-cols-5 bg-white py-10 gap-10">
+  <main class="max-w-7xl mx-auto bg-white py-10 gap-10">
     <div class="px-5 w-full flex flex-col md:col-span-2">
       <p class="text-base font-semibold text-primary-600">Lorem ipsum</p>
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Sort Algorithm</h1>
       <p class="text-base leading-7 text-gray-600">Lorem ipsum dolor sit amet.</p>
 
-      <div class="mt-5">
+    </div>
+
+    <div class="grid md:grid-cols-5 ">
+      <div class="p-5 w-full md:col-span-2">
         <h3 class="ml-5 mb-2">Input:</h3>
         <TextAreaInput
             id="number"
@@ -100,35 +103,33 @@
           <button v-if="input !== '' " @click="reset" class="text-sm font-semibold text-gray-900 disabled:text-gray-300">Reset</button>
         </div>
 
-        <iframe class="rounded-3xl mt-10"
-                src="https://open.spotify.com/embed/track/2uJ6iDuyoWXtMa0KvebF4C?utm_source=generator"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy">
-        </iframe>
-    </div>
+        <!--        <iframe class="rounded-3xl mt-10"-->
+        <!--                src="https://open.spotify.com/embed/track/2uJ6iDuyoWXtMa0KvebF4C?utm_source=generator"-->
+        <!--                width="100%"-->
+        <!--                height="152"-->
+        <!--                frameBorder="0"-->
+        <!--                allowfullscreen=""-->
+        <!--                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"-->
+        <!--                loading="lazy">-->
+        <!--        </iframe>-->
+      </div>
 
-    <div class="px-5 w-full md:col-span-3 ">
-      <p class="text-base font-semibold text-primary-600 hidden md:block">&nbsp;</p>
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl hidden md:block">&nbsp;</h1>
-      <p class="text-base leading-7 text-gray-600 hidden md:block">&nbsp;</p>
+      <div class="p-5 w-full md:col-span-3 ">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <template v-if="viewResult">
+            <SortSelection :arr="arr" />
+            <SortBubble :arr="arr" />
+<!--            <SortQuick :arr="arr" />-->
+            <SortInsertion :arr="arr" />
+          </template>
 
-      <div class="grid sm:grid-cols-2 gap-5 mt-5">
-        <template v-if="viewResult">
-          <SortSelection :arr="arr" />
-          <SortBubble :arr="arr" />
-          <SortQuick :arr="arr" />
-          <SortInsertion :arr="arr" />
-        </template>
-
-        <template v-for="sort in sorts" v-else>
-          <SortSkeleton :sort="sort" :loading="loading" />
-        </template>
+          <template v-for="sort in sorts" v-else>
+            <SortSkeleton :sort="sort" :loading="loading" />
+          </template>
+        </div>
       </div>
     </div>
+
   </main>
 
 </template>

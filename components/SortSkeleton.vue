@@ -14,7 +14,7 @@ const props = defineProps({
         type="text"
         class="mt-1 block w-full"
         rows="8"
-        placeholder="Run forest runnnn....."
+        placeholder="Run forrest runnnn....."
         disabled
     />
     <p class="ml-5 mt-1 text-base leading-7 text-gray-600">Time in ms</p>
