@@ -12,11 +12,17 @@
     "@iconify/vue": "^4.1.1",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.2",
     "postcss": "^8.4.25",
+    "postcss-scss": "^4.0.8",
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "fuse.js": "^6.6.2",
+    "vue-fuse": "^4.1.1"
   }
 }
