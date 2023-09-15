@@ -77,7 +77,7 @@
       </button>
     </template>
 
-    <div class="grid md:grid-cols-5 ">
+    <div class="grid md:grid-cols-5 mt-8">
       <div class="p-5 w-full md:col-span-2">
         <h3 class="ml-5 mb-2">Input:</h3>
         <TextAreaInput

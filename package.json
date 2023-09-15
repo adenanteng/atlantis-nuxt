@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "fuse.js": "^6.6.2",
+    "nuxt-swiper": "^1.2.2",
     "vue-fuse": "^4.1.1"
   }
 }

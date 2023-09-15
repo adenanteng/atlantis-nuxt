@@ -8,7 +8,7 @@
   <Default
     title="Atlantis"
     subtitle="Welcome to"
-    desc="Lorem ipsum"
+    desc="Semua kepusingan ada disini"
   >
     <template v-slot:action>
       <button >
@@ -16,7 +16,7 @@
       </button>
     </template>
 
-    <div class="grid md:grid-cols-5 p-5 mt-10">
+    <div class="grid md:grid-cols-5 p-5 mt-8">
       <NuxtLink to="/sort-algorithm" class="font-medium">
         <Icon icon="solar:sort-from-bottom-to-top-bold-duotone" class="text-5xl text-primary-600 mb-1" />
         <span >Sort Algorithm</span>
@@ -27,6 +27,10 @@
         <span >Fuzzy Search</span>
       </NuxtLink>
 
+      <NuxtLink to="/machine-learning" class="font-medium">
+        <Icon icon="solar:washing-machine-bold-duotone" class="text-5xl text-primary-600 mb-1" />
+        <span >Machine Learning</span>
+      </NuxtLink>
     </div>
   </Default>
 

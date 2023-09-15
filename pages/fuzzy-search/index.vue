@@ -1,43 +1,63 @@
 <script setup xmlns="http://www.w3.org/1999/html">
-    import { Icon } from '@iconify/vue';
-    import { useVueFuse } from 'vue-fuse'
-    import Default from "../../layouts/default.vue";
+import {Icon} from '@iconify/vue';
+import {useVueFuse} from 'vue-fuse'
+import Default from "../../layouts/default.vue";
 
-    const input = ref("")
-    const viewResult = ref(false)
+const loading = ref(false)
 
-    const loading = ref(false)
+const persons = [
+  {
+    name: 'Putra Pribowo',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Ega Budiman',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Mohamad Zainudin',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Yusikania Dwi Putri',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Rahmi Permata Hati',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Aprily Ayu Anbar',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Zuliana Nurfadlillah',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Rika Ningtias Azhari',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Muhammad Ramadhan',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Aden Anteng Anugrah',
+    desc: 'Lorem ipsum'
+  },
+  {
+    name: 'Ismara Adi Saputra',
+    desc: 'Lorem ipsum'
+  },
+]
 
-    const sorts = [
-      {
-        name: 'Selection Sort:',
-      },
-      {
-        name: 'Bubble Sort:',
-      },
-      {
-        name: 'Quick Sort:',
-      },
-      {
-        name: 'Insertion Sort:'
-      }
-    ]
-
-    const myList = [
-      'Aden Anteng Anugrah',
-      'Putra Pribowo',
-      'Ega Budiman',
-      'Mohamad Zainudin',
-      'Yusikania Dwi Putri',
-      'Rahmi Permata Hati',
-      'Aprily Ayu Anbar',
-      'Zuliana Nurfadlillah',
-      'Rika Ningtias Azhari',
-      'Muhammad Ramadhan',
-      'Mara Metro'
-    ]
-
-    const { search, results, noResults } = useVueFuse(myList)
+const {search, results, noResults} = useVueFuse(persons, {
+  keys: [
+    {name: 'name', weight: 2},
+    {name: 'desc', weight: 1},
+  ],
+})
 
 </script>
 
@@ -50,30 +70,42 @@
   >
     <template v-slot:action>
       <button onclick="history.back();return false;">
-        <Icon icon="fluent:arrow-circle-left-20-regular" class="text-4xl" />
+        <Icon icon="fluent:arrow-circle-left-20-regular" class="text-4xl"/>
       </button>
     </template>
 
-    <div class="grid md:grid-cols-5 ">
+    <div class="grid md:grid-cols-5 mt-8">
       <div class="p-5 w-full md:col-span-2">
-
-<!--        <input type="text" v-model="search">-->
-
         <TextInput
             id="number"
             v-model="search"
             type="text"
-            class="mt-1 block resize-y w-full"
-            rows="8"
+            class="mt-1 block w-full"
             placeholder="masukkan nama mahasiswa S2 Ilmu Komputer"
             required
             autofocus
 
         />
+      </div>
 
-        <p v-if="noResults">Sorry, no results for {{search}}</p>
-        <div v-for="(r, i) in results" :key="i">
-          {{ r }}
+      <div class="p-5 w-full md:col-span-3">
+        <div v-if="noResults" class="rounded-3xl border border-gray-300 shadow-lg py-2.5 px-4">
+          Sorry, no results for {{ search }}
+        </div>
+
+        <div class="rounded-3xl border border-gray-300 shadow-lg divide-y divide-gray-300">
+          <div
+              v-for="(person, i) in results"
+              :key="i"
+              class="py-2.5 px-4"
+          >
+            <div class="font-medium text-gray-900">
+              {{ person.name }}
+            </div>
+            <div class="font-xs text-gray-500">
+              {{ person.desc }}
+            </div>
+          </div>
         </div>
 
       </div>
