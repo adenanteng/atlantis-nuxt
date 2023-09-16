@@ -12,11 +12,11 @@
   >
     <template v-slot:action>
       <button >
-        <Icon icon="fluent:circle-20-regular" class="text-4xl" />
+        <Icon icon="fluent:animal-cat-20-regular" class="text-4xl" />
       </button>
     </template>
 
-    <div class="grid md:grid-cols-5 p-5 mt-8">
+    <div class="grid md:grid-cols-5 p-5 mt-8 gap-10">
       <NuxtLink to="/sort-algorithm" class="font-medium">
         <Icon icon="solar:sort-from-bottom-to-top-bold-duotone" class="text-5xl text-primary-600 mb-1" />
         <span >Sort Algorithm</span>
