@@ -102,7 +102,7 @@ const {search, results, noResults} = useVueFuse(persons, {
             <div class="font-medium text-gray-900 dark:text-white">
               {{ person.name }}
             </div>
-            <div class="font-xs text-gray-500 dark:text-gray-300">
+            <div class="text-sm text-gray-500 dark:text-gray-300">
               {{ person.desc }}
             </div>
           </div>
