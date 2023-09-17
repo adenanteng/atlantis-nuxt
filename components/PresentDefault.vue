@@ -19,9 +19,9 @@ const props = defineProps({
 
         <div class="grow">
           <h3 class="text-2xl md:text-6xl font-bold "><slot name="title" /></h3>
-          <p class="text-lg md:text-xl font-medium mt-10 max-w-2xl">
+          <div class="text-base md:text-2xl font-medium mt-10 max-w-3xl">
             <slot name="content" />
-          </p>
+          </div>
         </div>
       </div>
     </div>
