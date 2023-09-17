@@ -22,8 +22,8 @@ const loading = ref(false)
 
     <div class="grid grid-cols-2 md:grid-cols-5 p-5 mt-8 gap-5">
 
-      <NuxtLink to="/machine-learning/presentation" class="font-medium backdrop-blur rounded-3xl p-4 border border-gray-300 dark:border-gray-600">
-        <Icon icon="solar:presentation-graph-bold-duotone" class="text-5xl text-primary-600 mb-1" />
+      <NuxtLink to="/machine-learning/presentation" class="font-medium backdrop-blur rounded-3xl py-2.5 px-4 border border-gray-300 dark:border-gray-600">
+        <Icon icon="solar:presentation-graph-bold-duotone" class="text-5xl text-primary-600 dark:text-primary-400 mb-1" />
         <span class="text-gray-900 dark:text-white">Presentation</span>
       </NuxtLink>
 

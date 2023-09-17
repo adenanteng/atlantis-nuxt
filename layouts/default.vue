@@ -42,7 +42,7 @@ const colorMode = useColorMode()
           <slot name="action" />
         </div>
 
-        <p class="text-base font-semibold text-primary-600">{{ props.subtitle }}</p>
+        <p class="text-base font-semibold text-primary-600 dark:text-primary-400">{{ props.subtitle }}</p>
         <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">{{ props.title }}</h1>
         <p class="text-base leading-7 text-gray-600 dark:text-gray-200">{{ props.desc }}</p>
 
