@@ -34,7 +34,7 @@
       </button>
     </template>
 
-    <div class="grid grid-cols-2 md:grid-cols-5 p-5 mt-8 gap-10">
+    <div class="grid grid-cols-2 md:grid-cols-5 p-5 mt-8 gap-5">
       <NuxtLink to="/sort-algorithm" class="font-medium backdrop-blur rounded-3xl p-4 border border-gray-300 dark:border-gray-600">
         <Icon icon="solar:sort-from-bottom-to-top-bold-duotone" class="text-5xl text-primary-600 mb-1" />
         <span class="text-gray-900 dark:text-white">Sort Algorithm</span>
