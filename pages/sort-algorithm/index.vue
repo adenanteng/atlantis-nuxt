@@ -69,7 +69,7 @@
   <Default
       title="Sort Algorithm"
       subtitle="Lorem ipsum"
-      desc="Lorem ipsum"
+      desc="Algorithm for sorting numbers"
   >
     <template v-slot:action>
       <button onclick="history.back();return false;">

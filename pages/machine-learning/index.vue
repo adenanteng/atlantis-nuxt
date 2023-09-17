@@ -12,7 +12,7 @@ const loading = ref(false)
   <Default
       title="Machine Learning"
       subtitle="Lorem ipsum"
-      desc="Lorem ipsum"
+      desc="A crystal ball that can predict the future"
   >
     <template v-slot:action>
       <button onclick="history.back();return false;">

@@ -66,7 +66,7 @@ const {search, results, noResults} = useVueFuse(persons, {
   <Default
       title="Fuzzy Search"
       subtitle="Lorem ipsum"
-      desc="Lorem ipsum"
+      desc="Typo Friendly"
   >
     <template v-slot:action>
       <button onclick="history.back();return false;">
