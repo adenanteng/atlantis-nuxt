@@ -16,7 +16,7 @@ const loading = ref(false)
   >
     <template v-slot:action>
       <button onclick="history.back();return false;">
-        <Icon icon="fluent:arrow-circle-left-20-regular" class="text-4xl"/>
+        <Icon icon="fluent:arrow-circle-left-20-regular" class="text-gray-900 dark:text-white text-4xl" />
       </button>
     </template>
 
@@ -24,7 +24,7 @@ const loading = ref(false)
       <div class="p-5 w-full md:col-span-2">
         <NuxtLink to="/machine-learning/presentation" class="font-medium">
           <Icon icon="solar:presentation-graph-bold-duotone" class="text-5xl text-primary-600 mb-1" />
-          <span >Presentation</span>
+          <span class="text-gray-900 dark:text-white">Presentation</span>
         </NuxtLink>
       </div>
 

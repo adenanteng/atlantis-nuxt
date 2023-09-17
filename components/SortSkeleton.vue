@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
   <div class="text-left relative" >
-    <h3 class="ml-5 mb-2">{{ sort.name }}</h3>
+    <h3 class="ml-5 mb-2 text-gray-900 dark:text-white">{{ sort.name }}</h3>
     <TextAreaInput
         type="text"
         class="mt-1 block w-full"
@@ -17,7 +17,7 @@ const props = defineProps({
         placeholder="Run forrest runnnn....."
         disabled
     />
-    <p class="ml-5 mt-1 text-base leading-7 text-gray-600">Time in ms</p>
+    <p class="ml-5 mt-1 text-base leading-7 text-gray-600 dark:text-gray-400">Time in ms</p>
     <div v-if="loading" class="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
       <Icon icon="eos-icons:loading" class="h-20 w-20 text-primary-600 " />
     </div>

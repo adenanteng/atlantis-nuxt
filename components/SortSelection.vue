@@ -62,7 +62,7 @@ onMounted(() => {
 <!--      Run-->
 <!--    </button>-->
 
-    <h3 class="ml-5 mb-2">Selection Sort:</h3>
+    <h3 class="ml-5 mb-2 text-gray-900 dark:text-white">Selection Sort:</h3>
       <TextAreaInput
           v-model="result"
           type="text"
@@ -71,6 +71,6 @@ onMounted(() => {
           disabled
       />
 
-    <p class="ml-5 mt-1 text-base leading-7 text-gray-600">Took {{ endTime - startTime }} ms</p>
+    <p class="ml-5 mt-1 text-base leading-7 text-gray-600 dark:text-gray-400">Took {{ endTime - startTime }} ms</p>
   </div>
 </template>

@@ -70,7 +70,7 @@ const {search, results, noResults} = useVueFuse(persons, {
   >
     <template v-slot:action>
       <button onclick="history.back();return false;">
-        <Icon icon="fluent:arrow-circle-left-20-regular" class="text-4xl"/>
+        <Icon icon="fluent:arrow-circle-left-20-regular" class="text-gray-900 dark:text-white text-4xl" />
       </button>
     </template>
 
@@ -89,20 +89,20 @@ const {search, results, noResults} = useVueFuse(persons, {
       </div>
 
       <div class="p-5 w-full md:col-span-3">
-        <div v-if="noResults" class="rounded-3xl border border-gray-300 shadow-lg py-2.5 px-4">
+        <div v-if="noResults" class="rounded-3xl border border-gray-300 text-gray-900 dark:text-white shadow-lg py-2.5 px-4">
           Sorry, no results for {{ search }}
         </div>
 
-        <div class="rounded-3xl border border-gray-300 shadow-lg divide-y divide-gray-300">
+        <div class="rounded-3xl border border-gray-300 shadow-lg divide-y divide-gray-3000">
           <div
               v-for="(person, i) in results"
               :key="i"
               class="py-2.5 px-4"
           >
-            <div class="font-medium text-gray-900">
+            <div class="font-medium text-gray-900 dark:text-white">
               {{ person.name }}
             </div>
-            <div class="font-xs text-gray-500">
+            <div class="font-xs text-gray-500 dark:text-gray-300">
               {{ person.desc }}
             </div>
           </div>

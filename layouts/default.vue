@@ -34,20 +34,35 @@ const colorMode = useColorMode()
 </script>
 
 <template>
-  <main class="max-w-7xl mx-auto bg-white py-10 gap-10">
+  <main class="min-h-screen bg-white dark:bg-black py-10 gap-10">
+    <div class="max-w-7xl mx-auto">
 
-    <div class="px-5 w-full flex flex-col md:col-span-2">
-      <div class="mb-10" >
-        <slot name="action" />
+      <div class="px-5 w-full flex flex-col md:col-span-2">
+        <div class="mb-10" >
+          <slot name="action" />
+        </div>
+
+        <p class="text-base font-semibold text-primary-600">{{ props.subtitle }}</p>
+        <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">{{ props.title }}</h1>
+        <p class="text-base leading-7 text-gray-600 dark:text-gray-200">{{ props.desc }}</p>
+
       </div>
 
-      <p class="text-base font-semibold text-primary-600">{{ props.subtitle }}</p>
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">{{ props.title }}</h1>
-      <p class="text-base leading-7 text-gray-600">{{ props.desc }}</p>
+      <slot />
 
+      <div class="fixed bottom-5 md:bottom-10 px-5">
+        <select
+            class="bg-white dark:bg-black text-gray-900 dark:text-white px-4 py-1.5 border border-gray-300 focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 rounded-3xl shadow-sm"
+            v-model="$colorMode.preference"
+        >
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
     </div>
 
-    <slot />
+
 
   </main>
 </template>
