@@ -50,7 +50,7 @@ const loading = ref(false)
     >
       <SwiperSlide class="min-h-screen">
 
-        <div class="flex justify-center items-center min-h-screen from-primary-600 to-primary-300">
+        <div class="flex justify-center items-center min-h-screen bg-gradient-to-tr from-primary-600 to-primary-300">
           <div class="p-6">
             <div class="">
               <h5 class="text-3xl font-medium">Potential of</h5>
