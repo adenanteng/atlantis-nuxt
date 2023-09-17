@@ -93,7 +93,7 @@ const {search, results, noResults} = useVueFuse(persons, {
           Sorry, no results for {{ search }}
         </div>
 
-        <div class="rounded-3xl backdrop-blur border border-gray-300 shadow-lg divide-y divide-gray-3000">
+        <div class="rounded-3xl backdrop-blur border border-gray-300 dark:border-gray-600 shadow-lg divide-y divide-gray-3000 dark:divide-gray-600">
           <div
               v-for="(person, i) in results"
               :key="i"
