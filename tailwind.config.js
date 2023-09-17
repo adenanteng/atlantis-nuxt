@@ -14,7 +14,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     colors: {
-      primary: colors.green,
+      primary: colors.blue,
       transparent: 'transparent',
       current: 'currentColor',
       neutral: colors.neutral,
@@ -34,6 +34,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
+      backgroundImage: {
+        'glass': "url('/img/glass.png')",
       },
     },
   },
