@@ -22,6 +22,7 @@ module.exports = {
       white: colors.white,
       gray: colors.gray,
       green: colors.green,
+      zinc: colors.zinc,
       lime: colors.lime,
       cyan: colors.cyan,
       teal: colors.teal,
@@ -29,7 +30,8 @@ module.exports = {
       blue: colors.blue,
       indigo: colors.indigo,
       amber: colors.amber,
-      red: colors.red
+      red: colors.red,
+      pink: colors.pink
     },
     extend: {
       fontFamily: {

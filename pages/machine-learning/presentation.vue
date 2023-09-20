@@ -73,7 +73,7 @@ const loading = ref(false)
         >
           <template v-slot:icon>
             <Icon
-                icon="solar:washing-machine-bold-duotone"
+                icon="solar:lightbulb-bolt-bold-duotone"
                 class="text-6xl md:text-9xl"
             />
           </template>
@@ -117,11 +117,11 @@ const loading = ref(false)
 
       <SwiperSlide class="min-h-screen">
         <PresentDefault
-            class="bg-gradient-to-tr from-cyan-600 to-cyan-300"
+            class="bg-gradient-to-tr from-pink-600 to-pink-300"
         >
           <template v-slot:icon>
             <Icon
-                icon="solar:health-bold-duotone"
+                icon="solar:stethoscope-bold-duotone"
                 class="text-6xl md:text-9xl"
             />
           </template>
@@ -141,11 +141,11 @@ const loading = ref(false)
 
       <SwiperSlide class="min-h-screen">
         <PresentDefault
-            class="bg-gradient-to-tr from-cyan-600 to-cyan-300"
+            class="bg-gradient-to-tr from-green-600 to-green-300"
         >
           <template v-slot:icon>
             <Icon
-                icon="solar:health-bold-duotone"
+                icon="solar:money-bag-bold-duotone"
                 class="text-6xl md:text-9xl"
             />
           </template>
@@ -165,11 +165,11 @@ const loading = ref(false)
 
       <SwiperSlide class="min-h-screen">
         <PresentDefault
-            class="bg-gradient-to-tr from-cyan-600 to-cyan-300"
+            class="bg-gradient-to-tr from-sky-600 to-sky-300"
         >
           <template v-slot:icon>
             <Icon
-                icon="solar:health-bold-duotone"
+                icon="solar:music-note-slider-bold-duotone"
                 class="text-6xl md:text-9xl"
             />
           </template>
@@ -179,7 +179,7 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Pembelajaran mesin menjadikan hiburan lebih menyenangkan dan dipersonalisasi! Itu dapat membuat
+            Machine Learning menjadikan hiburan lebih menyenangkan dan dipersonalisasi! Itu dapat membuat
             dipersonalisasi rekomendasi untuk film, acara TV, dan musik, dan bahkan membuat konten baru berdasarkan
             preferensi pengguna.
           </template>
@@ -189,11 +189,11 @@ const loading = ref(false)
 
       <SwiperSlide class="min-h-screen">
         <PresentDefault
-            class="bg-gradient-to-tr from-cyan-600 to-cyan-300"
+            class="bg-gradient-to-tr from-teal-600 to-teal-300"
         >
           <template v-slot:icon>
             <Icon
-                icon="solar:health-bold-duotone"
+                icon="solar:ghost-smile-bold-duotone"
                 class="text-6xl md:text-9xl"
             />
           </template>
@@ -215,12 +215,12 @@ const loading = ref(false)
         <PresentDefault
           class="bg-gradient-to-tr from-cyan-600 to-cyan-300"
         >
-<!--          <template v-slot:icon>-->
-<!--            <Icon-->
-<!--                icon="solar:health-bold-duotone"-->
-<!--                class="text-9xl"-->
-<!--            />-->
-<!--          </template>-->
+          <template v-slot:icon>
+            <Icon
+                icon="solar:gamepad-minimalistic-bold-duotone"
+                class="text-9xl"
+            />
+          </template>
 
           <template v-slot:title>
             Demo!
@@ -228,7 +228,7 @@ const loading = ref(false)
 
           <template v-slot:content>
             <p >
-              Machine Learning bisa jadi sangat rumit dalam hal matematika. Tapi jangan takut, Machine Learning itu menyengkan!
+              Machine Learning bisa jadi sangat rumit dalam hal matematika. Tapi jangan takut, Machine Learning itu menyenangkan!
             </p>
             <a
                 href="https://magicstudio.com/ai-art-generator/"
@@ -244,7 +244,7 @@ const loading = ref(false)
 
       <SwiperSlide class="min-h-screen">
         <PresentDefault
-          class="bg-gradient-to-tr from-gray-600 to-gray-300"
+          class="bg-gradient-to-tr from-indigo-600 to-indigo-300"
         >
           <template v-slot:icon>
             <Icon
@@ -268,11 +268,11 @@ const loading = ref(false)
 
       <SwiperSlide class="min-h-screen">
         <PresentDefault
-            class="bg-gradient-to-tr from-cyan-600 to-cyan-300"
+            class="bg-gradient-to-tr from-gray-600 to-gray-300"
         >
           <template v-slot:icon>
             <Icon
-                icon="solar:health-bold-duotone"
+                icon="solar:chat-line-bold-duotone"
                 class="text-6xl md:text-9xl"
             />
           </template>
@@ -282,10 +282,32 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Kesimpulannya, Machine Learning merevolusi industri dengan memberikan wawasan dan prediksi
+            Kesimpulannya, Machine Learning merevolusi industri dengan memberikan wawasan dan prediksi yang
             sebelumnya tidak mungkin. Meskipun ada tantangan dan keterbatasan yang perlu dipertimbangkan, potensinya
             manfaatnya sangat besar. Saat kami terus mengeksplorasi kekuatan pembelajaran mesin, kami berharap dapat
             mencapai hal yang sama aplikasi yang lebih transformatif di masa depan.
+          </template>
+
+        </PresentDefault>
+      </SwiperSlide>
+
+      <SwiperSlide class="min-h-screen">
+        <PresentDefault
+            class="bg-gradient-to-tr from-amber-600 to-amber-300"
+        >
+          <template v-slot:icon>
+            <Icon
+                icon="solar:lightbulb-bolt-bold-duotone"
+                class="text-6xl md:text-9xl"
+            />
+          </template>
+
+          <template v-slot:title>
+            Fun Fact
+          </template>
+
+          <template v-slot:content>
+            This presentation made by Machine Learning.
           </template>
 
         </PresentDefault>
