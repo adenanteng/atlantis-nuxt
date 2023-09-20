@@ -228,11 +228,10 @@ const loading = ref(false)
 
           <template v-slot:content>
             <p >
-              Machine Learning bisa jadi sangat rumit dalam hal matematika. Sifat jaringan saraf sangat teknis, dan jargonnya
-              yang menyertainya cenderung membuat orang takut.
+              Machine Learning bisa jadi sangat rumit dalam hal matematika. Tapi jangan takut, Machine Learning itu menyengkan!
             </p>
             <a
-                href="https://elevenlabs.io/"
+                href="https://magicstudio.com/ai-art-generator/"
                 target="_blank"
                 class="flex justify-center items-center rounded-3xl px-4 py-2.5 mt-5 border border-white hover:bg-cyan-600 hover:border-cyan-600 shadow-lg transition duration-1000"
             >
