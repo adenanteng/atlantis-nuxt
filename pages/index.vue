@@ -13,7 +13,7 @@
     <template v-slot:action>
       <button
           @click="$colorMode.preference = 'dark'"
-          v-show="$colorMode.preference !== 'dark'"
+          v-if="$colorMode.preference === 'light'"
           class="text-gray-900 dark:text-white"
       >
         <Icon
@@ -24,11 +24,22 @@
 
       <button
           @click="$colorMode.preference = 'light'"
-          v-show="$colorMode.preference !== 'light'"
+          v-else-if="$colorMode.preference === 'dark'"
           class="text-gray-900 dark:text-white"
       >
         <Icon
             icon="fluent:weather-moon-20-filled"
+            class="text-4xl text-gray-900 dark:text-white"
+        />
+      </button>
+
+      <button
+          @click="$colorMode.preference = 'light'"
+          v-else
+          class="text-gray-900 dark:text-white"
+      >
+        <Icon
+            icon="fluent:weather-sunny-low-20-regular"
             class="text-4xl text-gray-900 dark:text-white"
         />
       </button>
