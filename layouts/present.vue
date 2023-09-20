@@ -8,19 +8,19 @@ const props = defineProps({
 })
 
 useHead({
-  title: 'Atlantis Made With Nuxt',
+  title: 'Atlantis',
   meta: [
     { name: 'description', content: 'Atlantis' }
   ],
   bodyAttrs: {
-    class: 'test'
+    class: 'Lorem ipsum dolor sit amet'
   },
   script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
 })
 
 useSeoMeta({
-  title: 'Atlantis Made With Nuxt',
-  ogTitle: 'Atlantis Made With Nuxt',
+  title: 'Atlantis',
+  ogTitle: 'Atlantis',
   description: 'Semua kepusingan ada disini.',
   ogDescription: 'Semua kepusingan ada disini.',
   ogImage: 'https://waykapay.com/img/minion.jpg',

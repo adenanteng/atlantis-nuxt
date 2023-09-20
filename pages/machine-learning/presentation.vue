@@ -53,7 +53,7 @@ const loading = ref(false)
         <div class="flex justify-center items-center min-h-screen bg-gradient-to-tr from-primary-600 to-primary-300">
           <div class="p-6">
             <div class="">
-              <h5 class="text-3xl font-medium">Potential of</h5>
+              <h5 class="text-3xl font-medium">Kekuatan dan Potensi dari</h5>
               <h3 class="text-6xl md:text-8xl font-bold">Machine Learning</h3>
               <p class="text-lg font-medium">Lorem ipsum dolor sit amet</p>
             </div>
@@ -79,13 +79,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            What is Machine Learning?
+            Apa itu Machine Learning?
           </template>
 
           <template v-slot:content>
-            Machine learning is a type of artificial intelligence that allows computers to learn and improve
-            on their own without being explicitly programmed. It's like teaching a child to learn from experience
-            and make better decisions in the future.
+            Machine Learning adalah kecerdasan buatan yang memungkinkan komputer untuk belajar dan berkembang
+            sendiri tanpa diprogram secara eksplisit. Ini seperti mengajar anak untuk belajar dari pengalaman
+            dan membuat keputusan yang lebih baik di masa depan.
           </template>
 
         </PresentDefault>
@@ -103,13 +103,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            How Does Machine Learning Work?
+            Bagaimana Cara Kerja Machine Learning?
           </template>
 
           <template v-slot:content>
-            Machine learning works by analyzing large amounts of data and identifying patterns.
-            With these patterns, the computer can make predictions and decisions based on new information.
-            It's like having a crystal ball that can predict the future!
+            Machine Learning bekerja dengan menganalisis data dalam jumlah besar dan mengidentifikasi pola.
+            Dengan pola tersebut, komputer dapat membuat prediksi dan keputusan berdasarkan informasi baru.
+            Ibarat memiliki bola kristal yang bisa memprediksi masa depan!
           </template>
 
         </PresentDefault>
@@ -127,13 +127,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Machine Learning in Healthcare
+            Machine Learning dalam Layanan Kesehatan
           </template>
 
           <template v-slot:content>
-            Machine learning is revolutionizing the healthcare industry! It can help doctors diagnose
-            diseases more accurately, identify potential health risks, and even create personalized
-            treatment plans for patients.
+            Machine Learning merevolusi industri perawatan kesehatan! Ini dapat membantu dokter mendiagnosis
+            penyakit secara lebih akurat, mengidentifikasi potensi risiko kesehatan, dan bahkan membuat personalisasi
+            rencana perawatan untuk pasien.
           </template>
 
         </PresentDefault>
@@ -151,12 +151,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Machine Learning in Finance
+            Machine Learning di Bidang keuangan
           </template>
 
           <template v-slot:content>
-            Machine learning is changing the way we do finance! It can help banks and financial institutions
-            detect fraud, predict market trends, and even create personalized investment portfolios for customers.
+            Machine Learning mengubah cara kita melakukan keuangan! Ini dapat membantu bank dan lembaga keuangan
+            mendeteksi penipuan, memprediksi tren pasar, dan bahkan membuat portofolio investasi yang dipersonalisasi
+            untuk pelanggan.
           </template>
 
         </PresentDefault>
@@ -174,12 +175,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Machine Learning in Entertainment
+            Machine Learning di Bidang Hiburan
           </template>
 
           <template v-slot:content>
-            Machine learning is making entertainment more fun and personalized! It can create personalized
-            recommendations for movies, TV shows, and music, and even create new content based on user preferences.
+            Pembelajaran mesin menjadikan hiburan lebih menyenangkan dan dipersonalisasi! Itu dapat membuat
+            dipersonalisasi rekomendasi untuk film, acara TV, dan musik, dan bahkan membuat konten baru berdasarkan
+            preferensi pengguna.
           </template>
 
         </PresentDefault>
@@ -197,13 +199,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Challenges and Limitations
+            Tantangan dan Keterbatasan
           </template>
 
           <template v-slot:content>
-            While machine learning has many benefits, there are also challenges and limitations to consider.
-            These include data privacy concerns, lack of transparency in decision-making, and the need for skilled
-            professionals to develop and maintain algorithms.
+            Meskipun Machine Learning memiliki banyak manfaat, ada juga tantangan dan keterbatasan yang perlu
+            dipertimbangkan. Hal ini mencakup masalah privasi data, kurangnya transparansi dalam pengambilan
+            keputusan, dan kebutuhan akan tenaga terampil profesional untuk mengembangkan dan memelihara algoritma.
           </template>
 
         </PresentDefault>
@@ -226,8 +228,8 @@ const loading = ref(false)
 
           <template v-slot:content>
             <p >
-              Machine Learning can be math-heavy. The nature of neural networks is highly technical, and the jargon
-              that goes along with it tends to scare people away.
+              Machine Learning bisa jadi sangat rumit dalam hal matematika. Sifat jaringan saraf sangat teknis, dan jargonnya
+              yang menyertainya cenderung membuat orang takut.
             </p>
             <a
                 href="https://holobooth.flutter.dev/"
@@ -253,13 +255,13 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            The Future of Machine Learning
+            Masa Depan Machine Learning
           </template>
 
           <template v-slot:content>
-            The future of machine learning is incredibly exciting! We can expect to see even more advancements
-            in the near future, such as self-driving cars, robots that can perform complex tasks,
-            and even machines that can create art and music.
+            Masa depan Machine Learning sangatlah menarik! Kita bisa berharap untuk melihat lebih banyak kemajuan
+            dalam waktu dekat, seperti mobil self-driving, robot yang dapat melakukan tugas-tugas kompleks,
+            dan bahkan mesin yang dapat menciptakan seni dan musik.
           </template>
 
         </PresentDefault>
@@ -277,14 +279,14 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Conclusion
+            Kesimpulan
           </template>
 
           <template v-slot:content>
-            In conclusion, machine learning is revolutionizing industries by providing insights and predictions that
-            were previously impossible. While there are challenges and limitations to consider, the potential
-            benefits are immense. As we continue to explore the power of machine learning, we can expect to see even
-            more transformative applications in the future.
+            Kesimpulannya, Machine Learning merevolusi industri dengan memberikan wawasan dan prediksi
+            sebelumnya tidak mungkin. Meskipun ada tantangan dan keterbatasan yang perlu dipertimbangkan, potensinya
+            manfaatnya sangat besar. Saat kami terus mengeksplorasi kekuatan pembelajaran mesin, kami berharap dapat
+            mencapai hal yang sama aplikasi yang lebih transformatif di masa depan.
           </template>
 
         </PresentDefault>
