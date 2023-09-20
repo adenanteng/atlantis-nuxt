@@ -83,7 +83,7 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Machine Learning adalah kecerdasan buatan yang memungkinkan komputer untuk belajar dan berkembang
+            <span class="font-bold">Machine Learning</span> adalah kecerdasan buatan yang memungkinkan komputer untuk belajar dan berkembang
             sendiri tanpa diprogram secara eksplisit. Ini seperti mengajar anak untuk belajar dari pengalaman
             dan membuat keputusan yang lebih baik di masa depan.
           </template>
@@ -107,9 +107,9 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Machine Learning bekerja dengan menganalisis data dalam jumlah besar dan mengidentifikasi pola.
-            Dengan pola tersebut, komputer dapat membuat prediksi dan keputusan berdasarkan informasi baru.
-            Ibarat memiliki bola kristal yang bisa memprediksi masa depan!
+            <span class="font-bold">Machine Learning</span> bekerja dengan menganalisis data dalam jumlah besar dan
+            mengidentifikasi pola. Dengan pola tersebut, komputer dapat membuat prediksi dan keputusan berdasarkan
+            informasi baru. Ibarat memiliki bola kristal yang bisa memprediksi masa depan!
           </template>
 
         </PresentDefault>
@@ -127,11 +127,11 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Machine Learning dalam Layanan Kesehatan
+            Machine Learning di Bidang Kesehatan
           </template>
 
           <template v-slot:content>
-            Machine Learning merevolusi industri perawatan kesehatan! Ini dapat membantu dokter mendiagnosis
+            <span class="font-bold">Machine Learning</span> dapat membantu dokter mendiagnosis
             penyakit secara lebih akurat, mengidentifikasi potensi risiko kesehatan, dan bahkan membuat personalisasi
             rencana perawatan untuk pasien.
           </template>
@@ -155,7 +155,7 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Machine Learning mengubah cara kita melakukan keuangan! Ini dapat membantu bank dan lembaga keuangan
+            <span class="font-bold">Machine Learning</span> dapat membantu bank dan lembaga keuangan
             mendeteksi penipuan, memprediksi tren pasar, dan bahkan membuat portofolio investasi yang dipersonalisasi
             untuk pelanggan.
           </template>
@@ -179,9 +179,8 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Machine Learning menjadikan hiburan lebih menyenangkan dan dipersonalisasi! Itu dapat membuat
-            dipersonalisasi rekomendasi untuk film, acara TV, dan musik, dan bahkan membuat konten baru berdasarkan
-            preferensi pengguna.
+            <span class="font-bold">Machine Learning</span> menjadikan hiburan lebih menyenangkan! dapat membuat
+            rekomendasi untuk film, acara TV, dan musik, dan bahkan membuat konten baru berdasarkan preferensi pengguna.
           </template>
 
         </PresentDefault>
@@ -203,9 +202,9 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Meskipun Machine Learning memiliki banyak manfaat, ada juga tantangan dan keterbatasan yang perlu
-            dipertimbangkan. Hal ini mencakup masalah privasi data, kurangnya transparansi dalam pengambilan
-            keputusan, dan kebutuhan akan tenaga terampil profesional untuk mengembangkan dan memelihara algoritma.
+            Meskipun <span class="font-bold">Machine Learning</span> memiliki banyak manfaat, ada juga tantangan dan
+            keterbatasan yang perlu dipertimbangkan. Hal ini mencakup masalah privasi data, kurangnya transparansi
+            dalam pengambilan keputusan, dan kebutuhan akan tenaga profesional untuk mengembangkan dan memelihara algoritma.
           </template>
 
         </PresentDefault>
@@ -228,7 +227,7 @@ const loading = ref(false)
 
           <template v-slot:content>
             <p >
-              Machine Learning bisa jadi sangat rumit dalam hal matematika. Tapi jangan takut, Machine Learning itu menyenangkan!
+              Machine Learning bisa jadi hal yang sangat rumit. Tapi jangan takut, <span class="font-bold">Machine Learning</span> itu menyenangkan!
             </p>
             <a
                 href="https://magicstudio.com/ai-art-generator/"
@@ -258,9 +257,9 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Masa depan Machine Learning sangatlah menarik! Kita bisa berharap untuk melihat lebih banyak kemajuan
-            dalam waktu dekat, seperti mobil self-driving, robot yang dapat melakukan tugas-tugas kompleks,
-            dan bahkan mesin yang dapat menciptakan seni dan musik.
+            Masa depan <span class="font-bold">Machine Learning</span> sangatlah menarik! Kita bisa berharap untuk
+            melihat lebih banyak kemajuan dalam waktu dekat, seperti mobil self-driving, robot yang dapat melakukan
+            tugas-tugas kompleks, dan bahkan mesin yang dapat menciptakan seni dan musik.
           </template>
 
         </PresentDefault>
@@ -282,10 +281,9 @@ const loading = ref(false)
           </template>
 
           <template v-slot:content>
-            Kesimpulannya, Machine Learning merevolusi industri dengan memberikan wawasan dan prediksi yang
-            sebelumnya tidak mungkin. Meskipun ada tantangan dan keterbatasan yang perlu dipertimbangkan, potensinya
-            manfaatnya sangat besar. Saat kami terus mengeksplorasi kekuatan pembelajaran mesin, kami berharap dapat
-            mencapai hal yang sama aplikasi yang lebih transformatif di masa depan.
+            Kesimpulannya, <span class="font-bold">Machine Learning</span> merevolusi industri dengan memberikan
+            wawasan dan prediksi yang sebelumnya tidak mungkin. Meskipun ada tantangan dan keterbatasan yang perlu
+            dipertimbangkan, potensinya manfaatnya sangat besar.
           </template>
 
         </PresentDefault>
@@ -303,11 +301,11 @@ const loading = ref(false)
           </template>
 
           <template v-slot:title>
-            Fun Fact
+            Fun Fact!
           </template>
 
           <template v-slot:content>
-            This presentation made by Machine Learning.
+            This presentation made by <span class="font-bold">Machine Learning</span>.
           </template>
 
         </PresentDefault>
