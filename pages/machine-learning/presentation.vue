@@ -55,7 +55,7 @@ const loading = ref(false)
             <div class="">
               <h5 class="text-3xl font-medium">Kekuatan dan Potensi dari</h5>
               <h3 class="text-6xl md:text-8xl font-bold">Machine Learning</h3>
-              <p class="text-lg font-medium">Lorem ipsum dolor sit amet</p>
+              <p class="text-lg font-medium">Aden & Zuliana</p>
             </div>
 
 <!--            <div class="mt-10 font-medium text-3xl">-->
@@ -315,9 +315,9 @@ const loading = ref(false)
         <div class="flex justify-center items-center min-h-screen bg-black">
           <div class="p-6">
             <div class="">
-              <h5 class="text-3xl font-medium">Lorem ipsum</h5>
+              <h5 class="text-3xl font-medium">Kami mengucapkan</h5>
               <h3 class="text-6xl md:text-8xl font-bold">Terima Kasih</h3>
-              <p class="text-lg font-medium">Lorem ipsum dolor sit amet</p>
+<!--              <p class="text-lg font-medium">Lorem ipsum dolor sit amet</p>-->
             </div>
           </div>
         </div>
